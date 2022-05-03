@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		533F9EE42821E2230051C348 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533F9EE32821E2230051C348 /* HomeView.swift */; };
 		C3CCF069281867EF00C5C188 /* DMOSV4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CCF068281867EF00C5C188 /* DMOSV4App.swift */; };
 		C3CCF06B281867EF00C5C188 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CCF06A281867EF00C5C188 /* ContentView.swift */; };
 		C3CCF06D281867F300C5C188 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CCF06C281867F300C5C188 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		533F9EE32821E2230051C348 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C3CCF065281867EF00C5C188 /* DMOSV4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMOSV4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CCF068281867EF00C5C188 /* DMOSV4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMOSV4App.swift; sourceTree = "<group>"; };
 		C3CCF06A281867EF00C5C188 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				C3CCF068281867EF00C5C188 /* DMOSV4App.swift */,
 				C3CCF06A281867EF00C5C188 /* ContentView.swift */,
+				533F9EE32821E2230051C348 /* HomeView.swift */,
 				C3CCF078282051AA00C5C188 /* Data.swift */,
 				C3CCF0762818694200C5C188 /* ScanTextView.swift */,
 				C3CCF06C281867F300C5C188 /* Assets.xcassets */,
@@ -146,6 +149,7 @@
 				C3CCF06B281867EF00C5C188 /* ContentView.swift in Sources */,
 				C3CCF069281867EF00C5C188 /* DMOSV4App.swift in Sources */,
 				C3CCF0772818694200C5C188 /* ScanTextView.swift in Sources */,
+				533F9EE42821E2230051C348 /* HomeView.swift in Sources */,
 				C3CCF079282051AA00C5C188 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +279,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DMOSV4/Preview Content\"";
-				DEVELOPMENT_TEAM = BH35C86GRM;
+				DEVELOPMENT_TEAM = 98YB5G3VR2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Camera must be used to scan medication";
@@ -284,12 +288,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = CMPE195B.DMOSV4;
+				PRODUCT_BUNDLE_IDENTIFIER = DMOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -305,7 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DMOSV4/Preview Content\"";
-				DEVELOPMENT_TEAM = BH35C86GRM;
+				DEVELOPMENT_TEAM = 98YB5G3VR2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Camera must be used to scan medication";
@@ -314,12 +319,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = CMPE195B.DMOSV4;
+				PRODUCT_BUNDLE_IDENTIFIER = DMOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
