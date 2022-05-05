@@ -45,11 +45,13 @@ struct ScanTextView: UIViewControllerRepresentable {
         }
         
         fileprivate func extractImages(from scan: VNDocumentCameraScan) -> [CGImage] {
+            //let extractedImages = [CGImage]()
             var extractedImages = [CGImage]()
+
             for index in 0..<scan.pageCount {
                 let extractedImage = scan.imageOfPage(at: index)
                 guard let cgImage = extractedImage.cgImage else { continue }
-                
+
                 extractedImages.append(cgImage)
             }
             return extractedImages

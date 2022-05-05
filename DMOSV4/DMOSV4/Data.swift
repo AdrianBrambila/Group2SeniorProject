@@ -20,3 +20,16 @@ class ItemStore: ObservableObject{
     @Published var item = [Item]()
     
 }
+
+
+struct Meds : Identifiable{
+    var id = String()
+    var listMed = String()
+    
+    
+}
+
+class MedStore: ObservableObject{
+    @Published var med = [Meds]()
+    
+}
