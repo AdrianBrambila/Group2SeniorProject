@@ -9,6 +9,7 @@ import SwiftUI
 import VisionKit
 import Vision
 
+
 struct ScanTextView: UIViewControllerRepresentable {
     @Environment(\.presentationMode) var presentationMode
     @Binding var recognizedText: String
@@ -45,13 +46,11 @@ struct ScanTextView: UIViewControllerRepresentable {
         }
         
         fileprivate func extractImages(from scan: VNDocumentCameraScan) -> [CGImage] {
-            //let extractedImages = [CGImage]()
             var extractedImages = [CGImage]()
-
             for index in 0..<scan.pageCount {
                 let extractedImage = scan.imageOfPage(at: index)
                 guard let cgImage = extractedImage.cgImage else { continue }
-
+                
                 extractedImages.append(cgImage)
             }
             return extractedImages
@@ -69,9 +68,11 @@ struct ScanTextView: UIViewControllerRepresentable {
                     guard let candidate = observation.topCandidates(maximumRecognitionCandidates).first else { continue }
                     
                     entireRecognizedText += "\(candidate.string)\n"
-                    
+                
                 }
+                
             }
+        
             recognizeTextRequest.recognitionLevel = .accurate
             
             for image in images {
@@ -79,11 +80,18 @@ struct ScanTextView: UIViewControllerRepresentable {
                 
                 try? requestHandler.perform([recognizeTextRequest])
             }
+
+            let set1 = Set(entireRecognizedText)
+            let set2 = Set("Benadryl")
+            let SameElements = set1.intersection(set2)
+            let test = String(SameElements)
             
-            return entireRecognizedText
+            return test
         }
     }
+
 }
+
 //    func makeUIViewController(context: Context) -> VNDocumentCameraViewController {
 //        let documentViewController = VNDocumentCameraViewController()
 //        documentViewController.delegate = context.coordinator
