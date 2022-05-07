@@ -10,19 +10,36 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         NavigationView{
-            VStack{
-                Text("Welcome Back")
-                NavigationLink(destination: ContentView()){
-                    Text("Please Click to Continue")
-                        .fontWeight(.semibold)
-                        .font(.title)
-                        .padding()
-                }
+            GeometryReader{geo in
+                ZStack{
+                    
+                    Image("Image")
+                        .resizable()
+                        .edgesIgnoringSafeArea(.all)
                 
+                    VStack{
+                        Label("Welcome Back!"/*@END_MENU_TOKEN@*/, systemImage: /*@START_MENU_TOKEN@*/"")
+                            .foregroundColor(Color.white)
+                            .font(.title)
+                        
+                        Spacer()
+                        NavigationLink(destination: ContentView()){
+                            Text("Please Click to Continue")
+                                .fontWeight(.semibold)
+                                .font(.title)
+                                .foregroundColor(Color.white)
+                            
+                        }
+                        
+                    }
+                }
             }
         }
     }
 }
+
+
+
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {

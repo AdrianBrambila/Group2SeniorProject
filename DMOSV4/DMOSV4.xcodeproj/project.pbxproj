@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5322F793282732460069ED0D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5322F792282732460069ED0D /* HomeView.swift */; };
+		53FAEA5A2827364B00B63555 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FAEA592827364B00B63555 /* HomeView.swift */; };
 		C3CCF069281867EF00C5C188 /* DMOSV4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CCF068281867EF00C5C188 /* DMOSV4App.swift */; };
 		C3CCF06B281867EF00C5C188 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CCF06A281867EF00C5C188 /* ContentView.swift */; };
 		C3CCF06D281867F300C5C188 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3CCF06C281867F300C5C188 /* Assets.xcassets */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5322F792282732460069ED0D /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = "../../../Group2SeniorProject v2/DMOSV4/DMOSV4/HomeView.swift"; sourceTree = "<group>"; };
+		53FAEA592827364B00B63555 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C3CCF065281867EF00C5C188 /* DMOSV4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMOSV4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CCF068281867EF00C5C188 /* DMOSV4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMOSV4App.swift; sourceTree = "<group>"; };
 		C3CCF06A281867EF00C5C188 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,10 +61,10 @@
 		C3CCF067281867EF00C5C188 /* DMOSV4 */ = {
 			isa = PBXGroup;
 			children = (
-				5322F792282732460069ED0D /* HomeView.swift */,
 				C3CCF068281867EF00C5C188 /* DMOSV4App.swift */,
 				C3CCF06A281867EF00C5C188 /* ContentView.swift */,
 				C3CCF0B22821895F00C5C188 /* MedicationAddViewController.swift */,
+				53FAEA592827364B00B63555 /* HomeView.swift */,
 				C3CCF07A2820A35400C5C188 /* Launch Screen.storyboard */,
 				C3CCF078282051AA00C5C188 /* Data.swift */,
 				C3CCF0762818694200C5C188 /* ScanTextView.swift */,
@@ -156,7 +156,7 @@
 				C3CCF06B281867EF00C5C188 /* ContentView.swift in Sources */,
 				C3CCF069281867EF00C5C188 /* DMOSV4App.swift in Sources */,
 				C3CCF0772818694200C5C188 /* ScanTextView.swift in Sources */,
-				5322F793282732460069ED0D /* HomeView.swift in Sources */,
+				53FAEA5A2827364B00B63555 /* HomeView.swift in Sources */,
 				C3CCF0B32821895F00C5C188 /* MedicationAddViewController.swift in Sources */,
 				C3CCF079282051AA00C5C188 /* Data.swift in Sources */,
 			);
