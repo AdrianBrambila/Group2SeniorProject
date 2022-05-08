@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct HomeView: View {
     var body: some View {
         NavigationView{
+            
             GeometryReader{geo in
                 ZStack{
                     

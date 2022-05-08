@@ -8,6 +8,7 @@
 import SwiftUI
 import VisionKit
 import Vision
+import AVFoundation
 
 struct ScanTextView: UIViewControllerRepresentable {
     @Environment(\.presentationMode) var presentationMode
@@ -57,7 +58,7 @@ struct ScanTextView: UIViewControllerRepresentable {
         }
         
         fileprivate func recognizeText(from images: [CGImage]) -> String {
-            var name : String = ""
+            
             var entireRecognizedText = ""
             let recognizeTextRequest = VNRecognizeTextRequest { (request, error) in
                 guard error == nil else { return }
@@ -95,10 +96,27 @@ struct ScanTextView: UIViewControllerRepresentable {
                 }
             }
             
+            textToSpeech(myText: entireRecognizedText)
+            
             return entireRecognizedText
+            
         }
+        
     }
 
+}
+
+func textToSpeech(myText: String){
+    let synthesizer = AVSpeechSynthesizer()
+    let utterance = AVSpeechUtterance(string: myText)
+    utterance.volume = 1
+    utterance.rate = 0.5
+    let voice = AVSpeechSynthesisVoice(language: "en-US")
+    utterance.voice = voice
+    
+
+    synthesizer.speak(utterance)
+    
 }
 
 //    func makeUIViewController(context: Context) -> VNDocumentCameraViewController {
