@@ -70,11 +70,11 @@ struct ScanTextView: UIViewControllerRepresentable {
                     guard let candidate = observation.topCandidates(maximumRecognitionCandidates).first else { continue }
                     
                     entireRecognizedText += "\(candidate.string)\n"
-                
+                    
                 }
                 
             }
-        
+            
             recognizeTextRequest.recognitionLevel = .accurate
             
             for image in images {
@@ -82,28 +82,40 @@ struct ScanTextView: UIViewControllerRepresentable {
                 
                 try? requestHandler.perform([recognizeTextRequest])
             }
-
-          /*  let set1 = Set(entireRecognizedText)
-            let set2 = Set("Benadryl")
-            let SameElements = set1.intersection(set2)
-            var test = String(SameElements)*/
+            
+            /*  let set1 = Set(entireRecognizedText)
+             let set2 = Set("Benadryl")
+             let SameElements = set1.intersection(set2)
+             var test = String(SameElements)*/
+            
+            /* let splitTextArray = entireRecognizedText.components(separatedBy: "\n")
+             for string in splitTextArray{
+             
+             if string.contains(Meds().id){
+             entireRecognizedText = Meds().id
+             }
+             }*/
             
             let splitTextArray = entireRecognizedText.components(separatedBy: "\n")
             for string in splitTextArray{
-
-                if string.contains(Meds().id){
-                    entireRecognizedText = Meds().id
+                for i in 0..<Meds().id.count{
+                    
+                    if string.contains(Meds().id[i]){
+                        
+                        entireRecognizedText = Meds().id[i]
+                        
+                    }
                 }
+                
             }
             
             textToSpeech(myText: entireRecognizedText)
-            
             return entireRecognizedText
             
         }
         
     }
-
+    
 }
 
 func textToSpeech(myText: String){
@@ -114,7 +126,6 @@ func textToSpeech(myText: String){
     let voice = AVSpeechSynthesisVoice(language: "en-US")
     utterance.voice = voice
     
-
     synthesizer.speak(utterance)
     
 }

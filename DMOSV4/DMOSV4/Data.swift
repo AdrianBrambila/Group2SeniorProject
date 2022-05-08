@@ -23,7 +23,7 @@ class ItemStore: ObservableObject{
 
 
 struct Meds : Identifiable{
-    var id = "Benadryl"
+    var id = ["Benadryl", "Tylenol", "Acetaminophen", "DayQuil", "NyQuil"]
     var listMed = String()
     
     

@@ -21,10 +21,10 @@ struct MedicationAddViewController: View {
     
     
     
-    func addNewMeds(){
+  /*  func addNewMeds(){
         medStore.med.append(Meds(id: String(medStore.med.count + 1), listMed: newMed))
         self.newMed = ""
-    }
+    }*/
     
     
     var body: some View {
@@ -68,7 +68,7 @@ struct MedicationAddViewController: View {
                         
                         Button(action: {
                             self.presentationMode.wrappedValue.dismiss()
-                            self.addNewMeds()
+                           // self.addNewMeds()
                         })
                         {
                             Text("Add New")
