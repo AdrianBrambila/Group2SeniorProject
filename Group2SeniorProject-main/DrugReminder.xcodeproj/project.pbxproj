@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD19648627BC77180012E4FF /* ScanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD19648527BC77180012E4FF /* ScanData.swift */; };
+		BD19648827BC7E810012E4FF /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD19648727BC7E810012E4FF /* ScannerView.swift */; };
+		BD19648A27BC840F0012E4FF /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD19648927BC840F0012E4FF /* TextRecognizer.swift */; };
+		BDB2689426DD97130047E010 /* DrugReminderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2689326DD97130047E010 /* DrugReminderApp.swift */; };
+		BDB2689626DD97130047E010 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB2689526DD97130047E010 /* ContentView.swift */; };
+		BDB2689826DD97150047E010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB2689726DD97150047E010 /* Assets.xcassets */; };
+		BDB2689B26DD97150047E010 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB2689A26DD97150047E010 /* Preview Assets.xcassets */; };
+		BDB268A626DD97160047E010 /* DrugReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB268A526DD97160047E010 /* DrugReminderTests.swift */; };
+		BDB268B126DD97160047E010 /* DrugReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB268B026DD97160047E010 /* DrugReminderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDB268A226DD97160047E010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDB2688826DD97130047E010 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDB2688F26DD97130047E010;
+			remoteInfo = DrugReminder;
+		};
+		BDB268AD26DD97160047E010 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDB2688826DD97130047E010 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDB2688F26DD97130047E010;
+			remoteInfo = DrugReminder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD19648527BC77180012E4FF /* ScanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanData.swift; sourceTree = "<group>"; };
+		BD19648727BC7E810012E4FF /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		BD19648927BC840F0012E4FF /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
+		BDB2689026DD97130047E010 /* DrugReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrugReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB2689326DD97130047E010 /* DrugReminderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugReminderApp.swift; sourceTree = "<group>"; };
+		BDB2689526DD97130047E010 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BDB2689726DD97150047E010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDB2689A26DD97150047E010 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BDB2689C26DD97150047E010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDB268A126DD97160047E010 /* DrugReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrugReminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB268A526DD97160047E010 /* DrugReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugReminderTests.swift; sourceTree = "<group>"; };
+		BDB268A726DD97160047E010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDB268AC26DD97160047E010 /* DrugReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrugReminderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB268B026DD97160047E010 /* DrugReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugReminderUITests.swift; sourceTree = "<group>"; };
+		BDB268B226DD97160047E010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDB2688D26DD97130047E010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB2689E26DD97160047E010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB268A926DD97160047E010 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDB2688726DD97130047E010 = {
+			isa = PBXGroup;
+			children = (
+				BDB2689226DD97130047E010 /* DrugReminder */,
+				BDB268A426DD97160047E010 /* DrugReminderTests */,
+				BDB268AF26DD97160047E010 /* DrugReminderUITests */,
+				BDB2689126DD97130047E010 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDB2689126DD97130047E010 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDB2689026DD97130047E010 /* DrugReminder.app */,
+				BDB268A126DD97160047E010 /* DrugReminderTests.xctest */,
+				BDB268AC26DD97160047E010 /* DrugReminderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDB2689226DD97130047E010 /* DrugReminder */ = {
+			isa = PBXGroup;
+			children = (
+				BD19648527BC77180012E4FF /* ScanData.swift */,
+				BD19648727BC7E810012E4FF /* ScannerView.swift */,
+				BD19648927BC840F0012E4FF /* TextRecognizer.swift */,
+				BDB2689326DD97130047E010 /* DrugReminderApp.swift */,
+				BDB2689526DD97130047E010 /* ContentView.swift */,
+				BDB2689726DD97150047E010 /* Assets.xcassets */,
+				BDB2689C26DD97150047E010 /* Info.plist */,
+				BDB2689926DD97150047E010 /* Preview Content */,
+			);
+			path = DrugReminder;
+			sourceTree = "<group>";
+		};
+		BDB2689926DD97150047E010 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BDB2689A26DD97150047E010 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BDB268A426DD97160047E010 /* DrugReminderTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDB268A526DD97160047E010 /* DrugReminderTests.swift */,
+				BDB268A726DD97160047E010 /* Info.plist */,
+			);
+			path = DrugReminderTests;
+			sourceTree = "<group>";
+		};
+		BDB268AF26DD97160047E010 /* DrugReminderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDB268B026DD97160047E010 /* DrugReminderUITests.swift */,
+				BDB268B226DD97160047E010 /* Info.plist */,
+			);
+			path = DrugReminderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDB2688F26DD97130047E010 /* DrugReminder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDB268B526DD97160047E010 /* Build configuration list for PBXNativeTarget "DrugReminder" */;
+			buildPhases = (
+				BDB2688C26DD97130047E010 /* Sources */,
+				BDB2688D26DD97130047E010 /* Frameworks */,
+				BDB2688E26DD97130047E010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrugReminder;
+			productName = DrugReminder;
+			productReference = BDB2689026DD97130047E010 /* DrugReminder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDB268A026DD97160047E010 /* DrugReminderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDB268B826DD97160047E010 /* Build configuration list for PBXNativeTarget "DrugReminderTests" */;
+			buildPhases = (
+				BDB2689D26DD97160047E010 /* Sources */,
+				BDB2689E26DD97160047E010 /* Frameworks */,
+				BDB2689F26DD97160047E010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDB268A326DD97160047E010 /* PBXTargetDependency */,
+			);
+			name = DrugReminderTests;
+			productName = DrugReminderTests;
+			productReference = BDB268A126DD97160047E010 /* DrugReminderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDB268AB26DD97160047E010 /* DrugReminderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDB268BB26DD97160047E010 /* Build configuration list for PBXNativeTarget "DrugReminderUITests" */;
+			buildPhases = (
+				BDB268A826DD97160047E010 /* Sources */,
+				BDB268A926DD97160047E010 /* Frameworks */,
+				BDB268AA26DD97160047E010 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDB268AE26DD97160047E010 /* PBXTargetDependency */,
+			);
+			name = DrugReminderUITests;
+			productName = DrugReminderUITests;
+			productReference = BDB268AC26DD97160047E010 /* DrugReminderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDB2688826DD97130047E010 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					BDB2688F26DD97130047E010 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					BDB268A026DD97160047E010 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = BDB2688F26DD97130047E010;
+					};
+					BDB268AB26DD97160047E010 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = BDB2688F26DD97130047E010;
+					};
+				};
+			};
+			buildConfigurationList = BDB2688B26DD97130047E010 /* Build configuration list for PBXProject "DrugReminder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDB2688726DD97130047E010;
+			productRefGroup = BDB2689126DD97130047E010 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDB2688F26DD97130047E010 /* DrugReminder */,
+				BDB268A026DD97160047E010 /* DrugReminderTests */,
+				BDB268AB26DD97160047E010 /* DrugReminderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDB2688E26DD97130047E010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB2689B26DD97150047E010 /* Preview Assets.xcassets in Resources */,
+				BDB2689826DD97150047E010 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB2689F26DD97160047E010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB268AA26DD97160047E010 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDB2688C26DD97130047E010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB2689626DD97130047E010 /* ContentView.swift in Sources */,
+				BD19648827BC7E810012E4FF /* ScannerView.swift in Sources */,
+				BD19648A27BC840F0012E4FF /* TextRecognizer.swift in Sources */,
+				BDB2689426DD97130047E010 /* DrugReminderApp.swift in Sources */,
+				BD19648627BC77180012E4FF /* ScanData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB2689D26DD97160047E010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB268A626DD97160047E010 /* DrugReminderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB268A826DD97160047E010 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB268B126DD97160047E010 /* DrugReminderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDB268A326DD97160047E010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDB2688F26DD97130047E010 /* DrugReminder */;
+			targetProxy = BDB268A226DD97160047E010 /* PBXContainerItemProxy */;
+		};
+		BDB268AE26DD97160047E010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDB2688F26DD97130047E010 /* DrugReminder */;
+			targetProxy = BDB268AD26DD97160047E010 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BDB268B326DD97160047E010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDB268B426DD97160047E010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDB268B626DD97160047E010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DrugReminder/Preview Content\"";
+				DEVELOPMENT_TEAM = 496Y8P7R55;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DrugReminder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SJSU.DrugReminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDB268B726DD97160047E010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DrugReminder/Preview Content\"";
+				DEVELOPMENT_TEAM = 496Y8P7R55;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DrugReminder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SJSU.DrugReminder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BDB268B926DD97160047E010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DrugReminderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SJSU.DrugReminderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrugReminder.app/DrugReminder";
+			};
+			name = Debug;
+		};
+		BDB268BA26DD97160047E010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DrugReminderTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SJSU.DrugReminderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrugReminder.app/DrugReminder";
+			};
+			name = Release;
+		};
+		BDB268BC26DD97160047E010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DrugReminderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SJSU.DrugReminderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrugReminder;
+			};
+			name = Debug;
+		};
+		BDB268BD26DD97160047E010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DrugReminderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SJSU.DrugReminderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrugReminder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDB2688B26DD97130047E010 /* Build configuration list for PBXProject "DrugReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB268B326DD97160047E010 /* Debug */,
+				BDB268B426DD97160047E010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDB268B526DD97160047E010 /* Build configuration list for PBXNativeTarget "DrugReminder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB268B626DD97160047E010 /* Debug */,
+				BDB268B726DD97160047E010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDB268B826DD97160047E010 /* Build configuration list for PBXNativeTarget "DrugReminderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB268B926DD97160047E010 /* Debug */,
+				BDB268BA26DD97160047E010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDB268BB26DD97160047E010 /* Build configuration list for PBXNativeTarget "DrugReminderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB268BC26DD97160047E010 /* Debug */,
+				BDB268BD26DD97160047E010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDB2688826DD97130047E010 /* Project object */;
+}
