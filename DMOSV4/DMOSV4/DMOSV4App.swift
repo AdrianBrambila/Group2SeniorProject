@@ -14,9 +14,9 @@ struct DMOSV4App: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView{
+
             HomeView()
-            }
+            
             .environmentObject(listViewModel)
         }
     }
