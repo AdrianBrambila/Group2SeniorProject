@@ -57,6 +57,7 @@ struct ScanTextView: UIViewControllerRepresentable {
         }
         
         fileprivate func recognizeText(from images: [CGImage]) -> String {
+            var name : String = ""
             var entireRecognizedText = ""
             let recognizeTextRequest = VNRecognizeTextRequest { (request, error) in
                 guard error == nil else { return }
@@ -81,12 +82,19 @@ struct ScanTextView: UIViewControllerRepresentable {
                 try? requestHandler.perform([recognizeTextRequest])
             }
 
-            let set1 = Set(entireRecognizedText)
+          /*  let set1 = Set(entireRecognizedText)
             let set2 = Set("Benadryl")
             let SameElements = set1.intersection(set2)
-            let test = String(SameElements)
+            var test = String(SameElements)*/
             
-            return test
+            let splitTextArray = entireRecognizedText.components(separatedBy: "\n")
+            for string in splitTextArray{
+                if string.contains("Benadryl"){
+                    entireRecognizedText = "Benadryl"
+                }
+            }
+            
+            return entireRecognizedText
         }
     }
 
