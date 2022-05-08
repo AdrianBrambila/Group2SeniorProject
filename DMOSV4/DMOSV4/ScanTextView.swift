@@ -9,10 +9,10 @@ import SwiftUI
 import VisionKit
 import Vision
 
-
 struct ScanTextView: UIViewControllerRepresentable {
     @Environment(\.presentationMode) var presentationMode
     @Binding var recognizedText: String
+    
     
     func makeCoordinator() -> Coordinator {
         Coordinator(recognizedText: $recognizedText, parent: self)
@@ -89,8 +89,9 @@ struct ScanTextView: UIViewControllerRepresentable {
             
             let splitTextArray = entireRecognizedText.components(separatedBy: "\n")
             for string in splitTextArray{
-                if string.contains("Benadryl"){
-                    entireRecognizedText = "Benadryl"
+
+                if string.contains(Meds().id){
+                    entireRecognizedText = Meds().id
                 }
             }
             

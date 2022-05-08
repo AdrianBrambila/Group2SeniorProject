@@ -29,6 +29,7 @@ struct ContentView: View {
             Spacer()
             NavigationLink(destination: MedicationAddViewController()) {
                 Text("Add New")
+                    .foregroundColor(Color.white)
             }
             //            Button(action: self.addNewItem, label: {
             //                Text("Add New")
@@ -49,7 +50,7 @@ struct ContentView: View {
                     .foregroundColor(Color.teal)
                     .edgesIgnoringSafeArea(.all)
                 Rectangle()
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color.blue)
                     .rotationEffect(Angle(degrees:45))
                     .edgesIgnoringSafeArea(.all)
                     
@@ -67,7 +68,7 @@ struct ContentView: View {
                 ScrollView {
                     ZStack {
                         RoundedRectangle(cornerRadius: 20, style: .continuous)
-                            .fill(Color.gray.opacity(0.2))
+                            .fill(Color.gray.opacity(0.5))
                         
                         Text(recognizedText)
                             .padding()
