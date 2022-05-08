@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct DMOSV4App: App {
+    
+    @StateObject var listViewModel: ListViewModel = ListViewModel()
+    
     var body: some Scene {
         WindowGroup {
+            NavigationView{
             HomeView()
+            }
+            .environmentObject(listViewModel)
         }
     }
 }

@@ -25,7 +25,7 @@ struct HomeView: View {
                             .font(.title)
                         
                         Spacer()
-                        NavigationLink(destination: ContentView()){
+                        NavigationLink(destination: ListView()){
                             Text("Please Click to Continue")
                                 .fontWeight(.semibold)
                                 .font(.title)

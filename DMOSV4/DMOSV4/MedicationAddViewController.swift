@@ -10,12 +10,15 @@ import SwiftUI
 import Combine
 
 struct MedicationAddViewController: View {
+    
+    @EnvironmentObject var listViewModel: ListViewModel
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     @State private var recognizedText = "Tap button to start scanning"
     @State var newMed : String = ""
     @State var newDose : String = ""
     @State var newInstruction : String = ""
+    @State var textFieldText: String = ""
     
     @ObservedObject var medStore = MedStore()
     
@@ -29,34 +32,38 @@ struct MedicationAddViewController: View {
     
     var body: some View {
         NavigationView {
-            ZStack{
-                Rectangle()
+          //  ZStack{
+              /*  Rectangle()
                     .foregroundColor(Color.teal)
                     .edgesIgnoringSafeArea(.all)
                 Rectangle()
                     .foregroundColor(Color.blue)
                     .rotationEffect(Angle(degrees:45))
-                    .edgesIgnoringSafeArea(.all)
+                    .edgesIgnoringSafeArea(.all)*/
                 VStack{
-                    
-                    Spacer()
-                    TextField("Medication", text: self.$newMed)
+                    TextField("Medication", text: $newMed)
                         .foregroundColor(Color.black)
                         .padding()
                         .background(Color.gray
-                                        .opacity(0.6))
+                                        .opacity(0.1))
+                        .frame(height: 55)
+                        .cornerRadius(10)
                     Spacer()
-                    TextField("Dosage", text: self.$newDose)
+                    TextField("Dosage", text: $newDose)
                         .foregroundColor(Color.black)
                         .padding()
                         .background(Color.gray
-                                        .opacity(0.6))
+                                        .opacity(0.1))
+                        .frame(height: 55)
+                        .cornerRadius(10)
                     Spacer()
-                    TextField("Instructions", text: self.$newInstruction)
+                    TextField("Instructions", text: $newInstruction)
                         .foregroundColor(Color.black)
                         .padding()
                         .background(Color.gray
-                                        .opacity(0.6))
+                                        .opacity(0.1))
+                        .frame(height: 55)
+                        .cornerRadius(10)
                     Spacer()
                     
                     HStack{
@@ -66,13 +73,11 @@ struct MedicationAddViewController: View {
                             Text(med.listMed)
                         }
                         
-                        Button(action: {
-                            self.presentationMode.wrappedValue.dismiss()
-                           // self.addNewMeds()
-                        })
+                        Button(action: saveButton, label:
                         {
-                            Text("Add New")
-                        }
+                            Text("Save")
+                                .foregroundColor(Color.blue)
+                        })
                         .padding()
                         .padding()
                         
@@ -81,10 +86,13 @@ struct MedicationAddViewController: View {
                 }
                 
                 //.navigationBarTitle("Enter Medication")
-                
             }
         }
         
+   // }
+    func saveButton(){
+        listViewModel.add(title: newMed)
+        presentationMode.wrappedValue.dismiss()
     }
 }
 //struct medInfo {
@@ -93,11 +101,13 @@ struct MedicationAddViewController: View {
 //    var newInstruction: String
 //}
 
+
 struct MedicationAdd_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
+        NavigationView {
             MedicationAddViewController()
         }
+        .environmentObject(ListViewModel())
     }
 }
 
